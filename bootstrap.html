@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: roboto;
+        }
+
+        a {
+            color: #000000;
+        }
+        .oyo{
+            height:600px;
+            background: linear-gradient( rgba(38, 9, 51, 0.83), rgba(38, 9, 51, 0.83)), url("SMX/bg.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .nav, .scrollingto-fixed {
+            position: static !important;
+            top:0 !important;
+            /* height: 600px; */
+           
+        }
+
+
+        .top {
+            position: absolute;
+            top: 2px;
+        }
+
+        .header-right {
+            position: absolute;
+            top:20px;
+            right: 20px;
+
+        }
+
+        .chieves {
+            position: absolute;
+            top: 170px;
+            left: -20px;
+            margin: 45px;
+            /* margin-left: 60px; */
+        }
+
+        .chief {
+            position: absolute;
+            top: 50px;
+            right: 200px;
+            margin: 45px;
+            /* margin-left: 60px; */
+        }
+
+        .line {
+            position: absolute;
+            top: 8px;
+            right: 85px;
+        }
+        .arrow{
+            height:35px;
+            width:35px;
+            margin-top:-60px; 
+            
+         }
+
+        /* .post-head{
+        position:relative;
+        height:550px;
+        background:linear-gradient( rgba(38, 9, 51, 0.83), rgba(38, 9, 51, 0.83) ), url("SMX/bg.jpg") no-repeat center;
+        background-size: cover;
+    }
+     */
+
+        form {
+            position: absolute;
+            background-color: ghostwhite;
+            clear: both;
+            display: inline-block;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 50px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .forgot-password {
+            color: rgb(93, 93, 189);
+            float: right;
+            margin-right: 15px;
+        }
+
+        input[type=text] {
+            border: none;
+            background: transparent;
+            margin-left: 10px;
+            width: 320px;
+            border-bottom: 1px solid black;
+            font-size: 14px;
+            font-family: roboto;
+        }
+
+        input[name=LegalName] {
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border: none;
+            background: white;
+            height: 40px;
+            width: 250px;
+            /* border-bottom:1px solid black; */
+        }
+
+        input[type=email] {
+            position: relative;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border: none;
+            background: white;
+            height: 40px;
+            width: 400px;
+            margin-left: 5px;
+            /* border-bottom:1px solid black; */
+        }
+
+        input[type=password] {
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid black;
+            margin-left: 10px;
+            width: 320px;
+            font-size: 14px;
+            font-family: roboto;
+        }
+
+        input[type=button] {
+            background-color: rgb(170, 39, 170);
+            border: none;
+            color: white;
+            /* padding: 16px 32px; */
+            text-decoration: none;
+            margin: 4px 4px;
+            cursor: pointer;
+            margin-left: 35px;
+            width: 250px;
+            height: 35px;
+
+
+        }
+
+        .form-pics {
+            position: absolute;
+            right: 5px;
+            height: 20px;
+            width: 20px;
+            float: right;
+            margin-right: 40px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        .columns {
+            border-left: 1px solid gray;
+
+        }
+
+        .lock {
+            height: 80px;
+            width: 70px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .styled {
+            font-family: muli;
+        }
+
+        .body {
+            text-align: center;
+            background-color: white;
+            padding-top: 15px;
+            height: 1700px;
+            margin-top: -50px;
+            margin-bottom: -20px;
+        }
+
+        .newsletter {
+            height: 230px;
+            background-color: #C4C4C4;
+            position: relative;
+        }
+
+        .letters {
+            height: 250px;
+            width: 150px;
+        }
+
+        .signup {
+            position: absolute;
+            left: 350px;
+            top: 20px;
+            color: #000000;
+            font-size: 20px;
+        }
+
+        .details {
+            position: absolute;
+            left: 340px;
+            bottom: 130px;
+
+        }
+
+        .final {
+            position: absolute;
+            left: 200px;
+            bottom: -80px;
+            width: 150px;
+            height: 45px;
+        }
+
+        footer {
+            position: relative;
+            height: 350px;
+            /* padding: 10px; */
+            background-color: #F8F8F8;
+            font-family: roboto;
+
+        }
+
+        .size {
+            width: 200px;
+            height: 180px;
+            background: transparent;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            margin: 10px;
+            font-size: 16px;
+            /* word-spacing:25px; */
+            /* bottom:10px; */
+            /* font-size: 15px; */
+            /* text-align: justified; 
+            /* column-span: 4px; */
+            /* color: black;
+            font-family: roboto; */
+        }
+
+        .leftdown {
+            position: absolute;
+            margin: 10px;
+            top: 200px;
+            left: 30px;
+        }
+
+        .trademark {
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+
+
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+        }
+
+        .rights {
+            height: 15px;
+            width: 15px
+        }
+
+        .rights1 {
+            height: 6px;
+            width: 8px
+        }
+
+        .social {
+            /* position: absolute; */
+            height: 20px;
+            width: 20px;
+            color: #454545
+        }
+
+        .right {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+           
+        <!-- <div class="navbar  toggler"> -->
+            <div class="oyo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                    <ul class="nav nav-pills">
+                            <a class="navbar-brand" href="#">
+                                    <img src="logo.png" class="img-fluid" alt="Company Logo" style="height:70px; width:80px; margin-top:-20px;">
+                                    </a>
+                            <li role="presentation" class="active" stlye="background-color:#6c188f"><a href="#">About</a></li>
+                            <li role="presentation"><a href="#">How It Works</a></li>
+                            <li role="presentation"><a href="#">Contact Us</a></li>
+                          </ul>
+                    </div>
+        <nav class="nav navbar fixed-top navbar-expand-lg navbar-expand-sm navbar-expand-xs">
+                <!-- <a class="navbar-brand" href="#">
+                <img src="logo.png" class="img-fluid" alt="Company Logo" style="height:70px; width:80px;">
+                </a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                 aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                <a class=" nav-item nav-link active" href="file:///C:/Users/Rejoice_BFS/Documents/ICTDAY/About.htmlfile:///C:/Users/Rejoice_BFS/Documents/ICTDAY/About.html" style="color:whitesmoke;">About<span class="sr-only">(current)</span></a>
+                <a class=" nav-item nav-link " href="#HowitWorks?" style="color:whitesmoke;"> How It Works</a>
+                <a class=" nav-item nav-link " href="file:///C:/Users/Rejoice_BFS/Documents/ICTDAY/contact.html" style="color:whitesmoke;"> Contact Us</a>
+            
+            <div class="navbar ml-auto" style="color:whitesmoke;">
+                <a class=" nav-item nav-link " href="#"style="color:whitesmoke;"> Log In </a>
+                <p class=" nav-item navbar line"> |</p>
+                <a class="nav-item nav-link " href="#"style="color:whitesmoke;"> Sign Up</a>
+            </div>
+        </div>
+        </nav>
+        </div>
+        
+            <!-- <div class="navbar top"> -->
+               
+        
+
+            <div class="row">
+
+                <!-- <div class="text pull-left" style="margin-top:100px; margin-left:100px;text-align:left;font-family:robotics;"> -->
+                <div class="col-md-7 chieves">
+                    <div class="text-left" style=" text-decoration:none; color:white;
+                            font-size: 18px;">
+                        <h2>
+                            A world class project
+                            <br/> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </h2>
+                            <br/>
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Aenean massa. Cum sociis natoque penatibus et magnis d is parturient montes, nascetur ridiculus
+                            mus. </p>
+                    </div>
+                </div>
+                <div class="col-md-3 chief">
+                    <!-- <form class="pull-right" style="margin-right: 250px; margin-top:100px;"> -->
+                    <form>
+                        <h4 style="color:#747075; font-family:roboto;" class="text-center"> Welcome Back!</h4>
+                        <br>
+                        <img class="img-fluid form-pics" src="SMX/eye.svg">
+                        <input type="text" name="Email" placeholder="Email">
+                        <br>
+                        <br>
+                        <br>
+                        <img class="img-fluid form-pics" src="SMX/Group.svg">
+                        <input type="password" name="Password" placeholder="Password">
+                        <br>
+                        <br>
+                        <br>
+                        <input type="button" value="Log In">
+                        <br/>
+                        <br/>
+                        <input type="checkbox" value="Remember me" style="font-family:roboto;"> Remember me
+                        <a class="forgot-password" href="#" style="font-family:roboto;"> forgot password?</a>
+                        <br/>
+                        <br/>
+                        <span class="text-right" style="margin: 65px; margin-bottom:5px;">
+                            <span> New to
+                                <span>
+                                    <strong> SMX? </strong>
+                                </span>
+                            </span>
+                            <a class="black-link" href="#" style="color:black;">
+                                <strong> Sign Up Here </strong>
+                            </a>
+                        </span>
+
+                    </form>
+                </div>
+            </div>
+            
+
+
+            <!-- <ul class="nav nav-tab">
+
+                <li class="nav-item"> <a class="nav-link active pull-right" href="#" data-toggle="tab" id="login-form"> Log In </a></li>
+                <!-- <a class="nav-link active" href="#" data-toggle="tab" > |</a> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#" data-toggle="tab" id="signup-form"> Sign Up</a></li>
+
+                <div class="tab-content">
+                    <div role="tabpanel"class="tab-pane fade show active pull-right" id="form1"aria-labelledby="login-form">
+                            <!-- <p> Trying out some content for tabbable panes</p> -->
+            <!-- </div>
+                    
+                    <div role="tabpanel" class="tab-pane" id="forms"aria-labelledby="signup-form">
+                        <!-- <p> Trying out some content for tabbable panes</p> -->
+            <!-- </div> 
+                </div>
+            </div>  -->
+
+        
+        </div>
+        
+
+    </header>
+    <!-- <div class="post-head img-fluid"> -->
+    <!-- <div class="row">
+        
+            <!-- <div class="text pull-left" style="margin-top:100px; margin-left:100px;text-align:left;font-family:robotics;"> -->
+    <!-- <div class="col-md-7 chieves">
+                    <div class="text-left" style=" text-decoration:none; color:white;
+                    font-size: 18px;"> -->
+    <!-- <h2>
+                A world class project <br/>
+                Lorem ipsum dolor sit amet, 
+                consectetuer adipiscing elit. 
+                </h2> -->
+
+    <!-- <p>Aenean massa. Cum sociis natoque penatibus et magnis 
+                        dis parturient montes, nascetur ridiculus mus. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis 
+                        d   is parturient montes, nascetur ridiculus mus. </p>
+                <!-- </div> -->
+    <!-- </div>
+            <div class="col-md-3 chief"> -->
+    <!-- <form class="pull-right" style="margin-right: 250px; margin-top:100px;"> -->
+    <!-- <form>
+                        <h4 style="color:#747075; font-family:roboto;" class="text-center"> Welcome Back!</h4>
+                        <br> <img class="img-fluid form-pics"src="SMX/eye.svg">
+                        <input type="text" name="Email" placeholder="Email"> <br><br>
+                        <br> <img class="img-fluid form-pics"src="SMX/Group.svg"> -->
+    <!-- <input type="password" name="Password" placeholder="Password"><br><br>
+                        <br> <img class="img-fluid form-pics"src="SMX/Group.svg">
+                        <input type="password" name="Confirm Password" placeholder="Confirm Password"><br><br>
+                        <input type="button" value="Log In"> <br/><br/>
+                        <input type="checkbox" value="Remember me"style="font-family:roboto;"> Remember me
+                        <a class="forgot-password" href="#" style="font-family:roboto;"> forgot password?</a><br/><br/>
+                        <span class="text-right" style="margin: 65px; margin-bottom:5px;">
+                        <span> New to <span><strong> SMX? </strong></span></span>
+                        <a class="black-link" href="#" style="color:black;"><strong> Sign Up Here </strong></a>
+                        </span> -->
+
+                    
+    </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="body">
+        <br/>
+        <br/>
+        <img class="img-fluid lock" src="SMX/padlock.svg" alt="Locked Key">
+        <br/>
+        <br/>
+        <div class="styled">
+            <h2> I have to sort out this arrow now</h2>
+            <p> So, Chief just put arrow here now in the name of arrow</p>
+            <p> She is fully aware that she will not help me write the code oh</p>
+        </div>
+        <br/>
+        <br/>
+        <hr class="longer">
+        <a href="#HowitWorks?"><img class="img-fluid arrow" src="SMX/arrow.png"></a> 
+        <div class="middle" style="margin-top:50px;">
+            <a id="HowitWorks?" title="Investments"><h3 class="text-center"> How it Works?</h3></a>
+            <!-- <div class="row">
+                        <div class="col-sm-6">.col-sm-6</div> -->
+            <!-- <div class="col-sm-6">.col-sm-6</div> -->
+        </div>
+        <div class="row box" style="margin:100px;">
+            <div class="col-md-6">
+                <img class="img-fluid align-middle" src="SMX/login.svg" alt="Log In">
+                <br/>
+                <br/>
+            </div>
+            <div class="col-sm-6 columns">
+                <p class="align-baseline" style="margin-top:0px;">
+                    <br/>
+                    <br/>
+                    <p style="text-align: left; color:rgba(0, 0, 0, 0.5); margin-left:160px;">
+                        <br/> Aenean massa. sociis nato5que penatibus et
+                        <br/>magnis dis parturient montes, nascetur ridiculus
+                        <br/> mus. Aenean massa</p>
+
+                </p>
+            </div>
+            <div class="col-sm-6" style="margin-top:0px;">
+                <br/>
+                <br/>
+                <h3> Create Deal </h3>
+                <p style="text-align: left; margin-left:160px;"> Aenean massa. sociis natoque penatibus et
+                    <br/>magnis dis parturient montes, nascetur ridiculus
+                    <br/>mus. Aenean massa</p>
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-6 columns" style="margin-top:0px;">
+                <img class="img-fluid align-baseline" src="SMX/agreement.svg" alt="hand shake">
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-6" style="margin-top:0px">
+                <img class="img-fluid" src="SMX/file.svg" alt="Deal Agreement">
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-6 columns" style="margin-top:0px;">
+                <br/>
+                <br/>
+                <br/>
+                <h3> Deal Matching </h3>
+                <p style="text-align: left; margin-left:160px;"> Aenean massa. sociis natoque penatibus et
+                    <br/>magnis dis parturient montes, nascetur ridiculus
+                    <br/> mus. Aenean massa</p>
+            </div>
+        </div>
+
+        <!-- <div class="row box" style="margin:50px;"> -->
+
+
+
+        <!-- <div class="row box" style="margin:50px;"> -->
+
+
+
+        <!-- </div> -->
+
+
+        <!-- <div style="height: 70px"></div>
+                <!-- <div class="col-sm-6"> -->
+        <!-- <h3> Create Deal </h3>
+                        <p> Tell us what you do, what you need the money for</p>
+                        <p> bla bla bla, all those kinda things</p>
+                        <p> Give all the necessary information and agree to the </p>
+                        <p> terms and conditions. </p><br/><br/>
+                        <div style="height: 70px"></div>
+                        <img class="img-fluid"src="SMX/agreement.svg" alt="hand shake">
+                    </div> -->
+        <!-- <div class="row"> -->
+        <!-- <hr class="vertical"> -->
+        <!-- <div class="columns col-md-6">
+                        <p> Bla bla bla, bla bla bla</p>
+                        <p> Chief is just stressing me out</p>
+                        <p> I'll do my best sha, so that Vincent will not laugh at me.</p><br/><br/>
+                        <div style="height: 70px"></div>
+                        <img class="img-fluid" src="SMX/file.svg" alt="Deal Agreement"><br/><br/>
+                        <div style="height: 70px"></div> -->
+        <!-- <h3> Deal Matching </h3>
+                        <p> So, basically, we get an investor to put funds into your business</p>
+                        <p> but of course, we have to make sure that your business isnt crap</p>
+                        <p> You have to give us the right information </p>
+                        <p> Feel free to sell yourself and ya market B</p>
+                    </div>
+                     -->
+
+        <!-- </div> -->
+        <div class="btn btn-default deal" style="background-color:#5D068C; color: white; font-size:20px; width:150px;"> Sign Up</div>
+    </div>
+
+    <br/>
+
+    <!-- <button class="btn-default btn-md btn-justified"> SIGN UP NOW </button> -->
+    <div class="newsletter">
+        <img class="img-fluid letters" src="SMX/letters.png">
+        <p class="signup"> Sign-up here to receive offers, updates on events and team developments</p>
+        <div class="details">
+            <input type="text" name="LegalName" placeholder="  First Name">
+            <input type="email" name="Email Address" placeholder="    Email Address">
+            <div class="btn btn-default final" style="background-color:#5D068C; color: white; font-size:20px; width:150px;"> Subscribe</div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="center">
+            <img class="img-fluid" src="logo.png" style="height:70px; width:80px;">
+            <p> by Black
+                <span class="purple" style="color:plum;">bit</span> Limited</p>
+        </div>
+        <div class="left">
+            <ul class=" nav-pills navbar-expand-lg light">
+                <li class="nav-link active" href="#"> Privacy Policy</li>
+                <img class="img-fluid dot" src="SMX/Ellipse.png">
+                <li class="nav-link active" href="#"> Terms</li>
+                <img class="img-fluid dot" src="SMX/Ellipse.png">
+                <li class="nav-link active" href="#">FAQs </li>
+                <img class="img-fluid dot" src="SMX/Ellipse.png">
+                <li class="nav-link active" href="#">Contact Us</li>
+
+            </ul>
+
+            <!-- <a href="homepage.html"> Privacy Policy</a>
+                    <img class="img-fluid dot" src="SMX/Ellipse.png">
+                    <a href="homepage.html"> Terms</a>
+                    <img class="img-fluid dot" src="SMX/Ellipse.png">
+                    <a href="homepage.html"> FAQs</a>
+                    <img class="img-fluid dot" src="SMX/Ellipse.png">
+                    <a href="homepage.html"> Contact Us</a> -->
+        </div>
+        <div class="right">
+            <p>
+                <b> About Us</b>
+            </p>
+            <!-- <pre class="pre-scrollable"> -->
+            <p> reprehenderit in voluptate
+                <br/> reprehenderit in voluptate
+                <br/> reprehenderit in voluptate
+                <br/> Aenean massa. sociis natoque penatibus
+                <br/>et magnis dis parturient montes, nascetur ridiculus mus.
+                <!-- </pre> -->
+        </div>
+        <div class="leftdown">
+            <!-- <div class="social"> -->
+            <!-- <div class="row"> -->
+            <span>
+                <a href="https://www.instagram.com/blackbitlimited/">
+                    <img src="SMX/twitter.svg" class=" img-fluid social">
+                </a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/blackbitlimited/">
+                    <img src="SMX/instagram.svg" class="img-fluid social">
+                </a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/blackbitlimited/">
+                    <img src="SMX/linkedin.svg" class="img-fluid social">
+                </a>
+            </span>
+            <br/>
+            <br/>
+        </div>
+        <div class="trademark">
+            <span>
+                <span>
+                    <img class="img-fluid rights" src="SMX/copyright.svg">
+                </span>
+                <span> SMX </span>
+                <span>
+                    <img class="img-fluid rights1" src="SMX/circle.svg">
+                </span>
+                <span> All rights reserved</span>
+            </span>
+        </div>
+        </div>
+        </div>
+
+    </footer>
+   
+</body>
+
+</html>

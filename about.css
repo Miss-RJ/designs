@@ -1,0 +1,242 @@
+body, h1{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+} 
+
+.Container{
+   width:auto;
+   height:auto;
+   position: relative;
+}
+.header{
+    /* background-color: grey; */
+    height:400px;
+    position:relative;
+    margin-left: -15px;
+    margin-right: -15px; 
+    background:linear-gradient( rgba(38, 9, 51, 0.83), rgba(38, 9, 51, 0.83) ), url("SMX/bg.jpg") no-repeat center;
+    background-size: cover;
+    
+    
+}
+.logo{
+    position:absolute;
+    width:80px;
+    height:70px;
+ }  
+ .menus{
+    text-align:center;
+    position: absolute;
+    top:10px;
+    left:300px;
+    font-size: 20px;
+    word-spacing: 25px;
+ }
+ .home{
+     position: absolute;
+     top:13px;
+     left:630px;
+
+    /* text-align:justify; */
+ }
+ hr.style7 {
+	border-top: 1px solid #8c8b8b;
+    border-bottom: 1px solid #fff;
+    width:1000px;
+    margin-left:0px;
+}
+
+ /* .page-header{
+     text-align: center;
+ } */
+ .login{
+     /* float: right; */
+     position: absolute;
+     top:10px;
+     right: 80px;
+     color:white;
+     font-size:20px;
+
+ }
+ img{
+     height: 60px;
+     width:70px;
+ }
+ a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(104, 102, 105);
+    text-decoration: underline solid purple;
+}
+a:active{
+    text-decoration: underline solid purple;
+}
+ deal{
+    width:80px;
+    height:70px;  
+
+ } 
+ .purple{
+     color: #945AAC
+ }
+ .body-top{
+    Font-Family: Roboto;
+    /* Font-Style: Medium; */
+    Font-Size: 20px;
+    /* Line-Height: 47px; */
+    /* align: Left; */
+    /* Letter-Spacing: 4%; */
+     color: #F9F9F9;
+     text-align: left;
+     margin-left: 150px;
+ }
+ .body-bottom{
+     height:500px;
+    
+ }
+ /* .col-md-4{
+     
+     /* border:1px solid;
+     padding:10px;
+     box-shadow: 7px, 5px;  /*offsetdrop-shadow; */
+     /*border-radius: 5px;
+    /* offset: 7px, 5px; */
+    /* color: black; 
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 30px 25px 25px;
+    text-align: center;
+    word-wrap: break-word;
+ } */
+.icons{
+    height:30px;
+    width:35px;
+}
+ .boxshadow {
+    background-color: #FDFDFD;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.08);
+    height: 230px;
+    width: 80px;
+    text-align: center;
+    margin:45px;
+    margin-left: 60px;
+ }
+ .footer{
+    position: relative;
+    height:250px;
+    padding: 10px;
+    background-color:#F8F8F8;
+
+ }
+ .size{
+     width:200px;
+     height:180px;
+     background:transparent;
+ }
+ .center{
+     text-align: center;
+ }
+ .left{
+     position:absolute;
+     left:50px;
+     top:80px;
+     margin: 10px;
+     font-size: 16px; 
+     word-spacing:25px;
+     /* bottom:10px; */
+    /* font-size: 15px; */
+    /* text-align: justified; 
+    /* column-span: 4px; */
+    /* color: black;
+    font-family: roboto; */ 
+ }
+
+ .leftdown {
+     position:absolute;
+     margin:10px;
+     top: 150px;
+     left:50px;
+ }
+ .trademark{
+    position:absolute;
+    bottom:20px;
+    margin-left:50px;
+
+}
+ .dot{
+    height:10px;
+    width:10px;  
+ }
+ .social{
+     /* position: absolute; */
+     height:15px;
+     width:15px; 
+     color:#454545
+ }
+ .right{
+     position:absolute;
+     right:50px;
+     bottom:50px;
+
+    text-align: center;
+ }
+ 
+ /* .footer{
+    position: relative;
+    height:250px;
+    padding: 10px;
+    background-color:#F8F8F8;
+
+ }
+ .center{
+     text-align: center;
+ }
+ .left{
+     /*position:absolute;*/
+     /* left:50px;
+     top:100px;
+     margin: 10px;
+     font-size: 16px;  */
+     /* bottom:10px; */
+    /* font-size: 15px; */
+    /* text-align: justified; 
+    /* column-span: 4px; */
+    /* color: black;
+    font-family: roboto; */ 
+ /* } */
+
+ /* .leftdown { */
+     /*position:absolute;*/
+     /* margin:10px;
+     top: 150px;
+     left:50px;
+ } */
+ /* .trademark{ */
+    /*position:absolute;*/
+    /* margin:10px;
+    bottom:20px;
+    left:50px;
+} */
+ /* .dot{
+    height:10px;
+    width:10px;  
+ } */
+ /* .social{
+     /* position: absolute; */
+     /* height:15px;
+     width:15px; 
+ } */ 
+ /* .right{
+     position:absolute;
+     right:50px;
+     bottom:20px;
+
+    text-align: center;
+ }
+  */ 
